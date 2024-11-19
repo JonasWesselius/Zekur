@@ -1,37 +1,72 @@
-const mainNavLinks = document.querySelectorAll('.main-header .navigation a');
-const secondaryHeader = document.getElementById('secondary-header');
-const secondaryContent = document.getElementById('secondary-content');
+const mainNavLinks = document.querySelectorAll(".main-header .navigation a");
+const secondaryHeader = document.getElementById("secondary-header");
+const secondaryContent = document.getElementById("secondary-content");
 
-
+// Map for dynamic secondary content
 const secondaryContentMap = {
     verzekering: `
-        <li><a href="#zorg">Zorg</a></li>
-        <li><a href="#wonen">Wonen</a></li>
-        <li><a href="#op-weg">Op weg</a></li>
-        <li><a href="#ondernemen">Ondernemen</a></li>
+        <li><a href="#zorg" data-section="zorg">Zorg</a></li>
+        <li><a href="#wonen" data-section="wonen">Wonen</a></li>
+        <li><a href="#op-weg" data-section="op-weg">Op weg</a></li>
+        <li><a href="#ondernemen" data-section="ondernemen">Ondernemen</a></li>
     `,
-    'over-zekur': `
-        <li><a href="#visie">Onze Visie</a></li>
-        <li><a href="#missie">Onze Missie</a></li>
-        <li><a href="#waarden">Onze Waarden</a></li>
+    "over-zekur": `
+        <li><a href="#visie" data-section="visie">Onze Visie</a></li>
+        <li><a href="#missie" data-section="missie">Onze Missie</a></li>
+        <li><a href="#waarden" data-section="waarden">Onze Waarden</a></li>
     `,
     klantenservice: `
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#support">Support</a></li>
+        <li><a href="#faq" data-section="faq">FAQ</a></li>
+        <li><a href="#contact" data-section="contact">Contact</a></li>
+        <li><a href="#support" data-section="support">Support</a></li>
     `,
 };
 
-mainNavLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const section = link.dataset.section;
-
-        if (secondaryContentMap[section]) {
-            secondaryContent.innerHTML = secondaryContentMap[section];
-            secondaryHeader.style.display = 'flex';
+// Function to set the active link
+const setActiveLink = (links, section) => {
+    links.forEach((link) => {
+        if (link.dataset.section === section) {
+            link.classList.add("active");
         } else {
-            secondaryHeader.style.display = 'none';
+            link.classList.remove("active");
         }
+    });
+};
+
+// Function to update secondary header
+const updateSecondaryHeader = (section) => {
+    if (secondaryContentMap[section]) {
+        secondaryContent.innerHTML = secondaryContentMap[section];
+        secondaryHeader.style.display = "flex";
+
+        // Add event listeners to the new secondary links
+        const secondaryLinks = secondaryContent.querySelectorAll("a");
+        setActiveLink(secondaryLinks, section); // Set default active link
+        secondaryLinks.forEach((link) => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const subSection = link.dataset.section;
+                setActiveLink(secondaryLinks, subSection); // Highlight clicked link
+            });
+        });
+    } else {
+        secondaryHeader.style.display = "none";
+    }
+};
+
+// Initialize active state and content on page load
+document.addEventListener("DOMContentLoaded", () => {
+    const currentSection = window.location.hash.slice(1) || "verzekering"; // Default section
+    setActiveLink(mainNavLinks, currentSection);
+    updateSecondaryHeader(currentSection);
+
+    // Add click event listeners to main navigation
+    mainNavLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const section = link.dataset.section;
+            setActiveLink(mainNavLinks, section);
+            updateSecondaryHeader(section);
+        });
     });
 });
