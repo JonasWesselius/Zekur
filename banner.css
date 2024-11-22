@@ -1,0 +1,40 @@
+/* General banner styling */
+.banner {
+    width: 100%; /* Ensures full-width */
+    height: 300px; /* Adjust the height as needed */
+    background-image: url('images/banner.png'); /* Replace with the actual path to your image */
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Center the image */
+    display: flex; /* Enables flexbox for centering content */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    color: white; /* White text */
+    text-align: center; /* Center-align text */
+    position: relative; /* Required for overlay */
+    overflow: hidden; /* Ensures no content spills out */
+}
+
+/* Add an optional overlay for better text visibility */
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for the overlay */
+    z-index: 1; /* Ensures it appears behind the text */
+}
+
+/* Banner text styling */
+.banner-content {
+    position: relative; /* Positions content above the overlay */
+    z-index: 2; /* Places it above the overlay */
+}
+
+.banner-content h1 {
+    font-size: 48px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}

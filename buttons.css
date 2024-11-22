@@ -1,0 +1,21 @@
+/* Next button */
+.next-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#next-button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    transition: background-color 0.3s;
+}
+
+#next-button.enabled {
+    background-color: var(--call-to-action);
+    cursor: pointer;
+}
