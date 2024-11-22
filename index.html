@@ -6,6 +6,10 @@
     <title>ZEKUR: In een keer goed verzekerd</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="colors.css">
 </head>
 <body>
     <header class="main-header">
@@ -57,7 +61,48 @@
             </div>
         </div>
     </header>
-    <div><p>hoi</p></div>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Pakket op maat</h1>
+        </div>
+    </section>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">Wat is uw leeftijd?</div>
+            <div class="card-options">
+                <button class="option" data-card="age">Onder 18</button>
+                <button class="option" data-card="age">18-35</button>
+                <button class="option" data-card="age">35-65</button>
+                <button class="option" data-card="age">65+</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-header">Wat is uw inkomen?</div>
+            <div class="card-options">
+                <button class="option" data-card="income">Laag</button>
+                <button class="option" data-card="income">Gemiddeld</button>
+                <button class="option" data-card="income">Hoog</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-header">Wat is uw burgelijke staat?</div>
+            <div class="card-options">
+                <button class="option" data-card="status">Ongehuwd</button>
+                <button class="option" data-card="status">Gehuwd</button>
+                <button class="option" data-card="status">Gescheiden</button>
+                <button class="option" data-card="status">Weduw(e)</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="next-container">
+        <button id="next-button" disabled>Next</button>
+    </div>
+    
     <footer class="main-footer">
         <div class="container">
             <div class="footer-section">
@@ -104,5 +149,6 @@
     </footer>
     
     <script src="script.js"></script>
+    <script src="multple choice.js"></script>
 </body>
 </html>
