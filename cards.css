@@ -51,4 +51,71 @@
     background-color: var(--secondary-colour);
     border-color: var(--secondary-colour);
 }
+/* ------------------------------------stap 2------------------------ */
+.card ul{
+    text-align: left;
+    list-style: none;
+}
 
+.check{
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.card_bold{
+    font-weight: bold;
+}
+
+.list-text {
+    display: inline-block;
+    text-indent: 0;
+    line-height: 1.5;
+}
+
+li {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 0;
+}
+
+.card-options2{
+    margin-top: 75px;
+}
+
+.prijs{
+    background-color: var(--secondary-colour);
+    padding: 5px 15px;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.prijs sub{
+    font-weight: 400;
+}
+
+.calc{
+    background-color: var(--secondary-colour); 
+    padding: 5px 15px; 
+    display: inline-flex; 
+    justify-content: start; 
+    align-items: center; 
+    gap: 8px;
+    font-weight: 600;
+    text-decoration: none; 
+    color: var(--main-colour);
+    margin-top: 55px;
+}
+
+.icon {
+    font-size: 30px; /* Grootte van het icoon */
+    color: var(--main-colour);
+}
+
+.btn-premie {
+    font-size: 16px; 
+    text-decoration: none; 
+    color: inherit; 
+}
