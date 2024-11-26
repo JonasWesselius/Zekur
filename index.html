@@ -1,108 +1,63 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZEKUR: In een keer goed verzekerd</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Z-logo.png" type="image/png">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="banner.css">
-    <link rel="stylesheet" href="cards.css">
-    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="buttons.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/Zekur-Logo-Light.svg" alt="Logo">
-                </a>
-            </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#" data-section="verzekering" id="verzekering-link">Verzekering</a></li>
-                    <li><a href="#about" data-section="over-zekur">Over Zekur</a></li>
-                    <li><a href="#customer" data-section="klantenservice">Klantenservice</a></li>
-                </ul>
-            </nav>
-            <div class="dropdown">
-                <button class="font-button">
-                    Aa
-                    <img src="images/arrow.png" alt="Dropdown Icon" class="dropdown-icon">
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Klein</a></li>
-                    <li><a href="#">Normaal</a></li>
-                    <li><a href="#">Groot</a></li>
-                </ul>
-            </div>
-            <div class="header-buttons">
-                <a href="#login" class="btn btn-secondary">Inloggen</a>
-                <a href="#language" class="btn btn-primary">EN | NL</a>
-            </div>
+    
+<!---------------------------------start--------------------------------------->
+<section class="start">
+    <div>
+        <div class="head">
+            <h2>Jouw zorgverzekering, <br> vanaf</h2>
         </div>
-    </header>
-    <header class="secondary-header" id="secondary-header">
-        <div class="container">
-            <div class="home-icon">
-                <a href="#home">
-                    <img src="images/home-icon.svg" alt="Home" class="home-icon">
-                </a>
-            </div>
-            <nav class="secondary-navigation">
-                <ul id="secondary-content">
-                    <!-- Dynamische inhoud -->
-                </ul>
-            </nav>
-            <div class="search-bar">
-                <input type="text" placeholder="Zoeken..." />
-                <img src="images/search.svg" alt="Zoeken" class="search-icon">
-            </div>
+        <div class="price">
+            157, 
+            <div class="price-details">
+                <sup class="decimals">70</sup>
+                <sub class="per-month">P.M.</sub>
+            </div> 
         </div>
-    </header>
+        <div class="calc">
+            <ion-icon name="calculator-outline" class="icon"></ion-icon> <a href="/zorgverzekering/premie-berekenen" class="btn-premie">Bereken je premie</a>
+        </div>
+        
+        <p>Berken alleen je premie, aanvragen kan later.</p>
+        <img src="images/zorg_startpage.jpg" alt="zorg_startpage" class="zorg-image">
+    </div>
+</section>
+  
 
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Pakket op maat</h1>
+<!---------------------------------knoppen--------------------------------------->
+    <section class="buttons">
+        <div>
+            <img src="images/zorgverzekering.png" alt="zorgverzekering-button" class="knop">
+            <img src="images/woonverzekering.png" alt="woonverzekering-button" class="knop">
+            <img src="images/voertuigverzekering.png" alt="voertuigverzekering-button" class="knop">
+            <img src="images/zzp-verzekering.png" alt="zzp-verzekering-button" class="knop">
         </div>
     </section>
+<!---------------------------------inhoudelijk--------------------------------------->
+    <section class="inhoud">
+        <div class="inhoud-tekst">
+            <h4> In één keer goed verzekerd.</h1>
+            <p>Als je goed verzekerd wilt zijn kies je voor de verzekeringsbundels van ZEKUR. Want onze wereld draait om jou. Wij maken onze verzekeringsbundels met jou en jouw situatie in ons achterhoofd. We bundelen onze verzekeringen zodat je geen onnodige risico's loopt. Ook houden we zo de premies laag. <br><br>
 
-    <div class="card-container">
-        <div class="card">
-            <div class="card-header">Wat is uw leeftijd?</div>
-            <div class="card-options">
-                <button class="option" data-card="age">Onder 18</button>
-                <button class="option" data-card="age">18-35</button>
-                <button class="option" data-card="age">35-65</button>
-                <button class="option" data-card="age">65+</button>
-            </div>
+                Jij kiest zelf gemakkelijk de bundel die bij jou past. Zo ben je in één keer goed verzekerd!</p>
         </div>
-    
-        <div class="card">
-            <div class="card-header">Wat is uw inkomen?</div>
-            <div class="card-options">
-                <button class="option" data-card="income">Laag</button>
-                <button class="option" data-card="income">Gemiddeld</button>
-                <button class="option" data-card="income">Hoog</button>
-            </div>
-        </div>
-    
-        <div class="card">
-            <div class="card-header">Wat is uw burgelijke staat?</div>
-            <div class="card-options">
-                <button class="option" data-card="status">Ongehuwd</button>
-                <button class="option" data-card="status">Gehuwd</button>
-                <button class="option" data-card="status">Gescheiden</button>
-                <button class="option" data-card="status">Weduw(e)</button>
-            </div>
-        </div>
-    </div>
-    
-    <div class="next-container">
-        <button id="next-button" disabled>Next</button>
-    </div>
-    
+    </section>
     <footer class="main-footer">
         <div class="container">
             <div class="footer-section">
@@ -146,9 +101,11 @@
         <div class="footer-bottom">
             <p>ZEKUR onderdeel van Coöperatie Univé U.A. Statutaire vestigingsplaats: Zwolle. Postbus 15, 9400 AA Assen KvK-nr: 05075986, AFM-nr: 12012158, Kifid-nr: 300.008224</p>
         </div>
-    </footer>
+    </footer>    
     
-    <script src="script.js"></script>
-    <script src="multple choice.js"></script>
+        
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

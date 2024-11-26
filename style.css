@@ -1,0 +1,170 @@
+
+
+body{
+    background-color: #F5F5F5;
+    margin: 0;
+    font-family: 'inter';
+}
+
+.start {
+    background-color: #143039; 
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.zorg-image{
+    height: 450px;
+    position: absolute; 
+    right: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+
+.head{
+    font-size: 32px;
+    color: #F5F5F5;
+    padding: 135px 0 0 100px;
+}
+
+.price{
+    font-size: 140px;
+    color: #143039;
+    background-color: #E9FDB8;
+    font-weight: bold;
+    display: inline-flex; 
+    align-items: flex-start; 
+    gap: 4px;
+    margin: 20px 0 30px 100px;
+    padding: 0 20px;
+}
+.price-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding: 18px;
+}
+.decimals{
+    font-size: 64px;
+    margin: 0;
+
+}
+
+.per-month{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 20px
+}
+
+.calc{
+    background-color: #FF8F5F;
+    width: 280px;
+    color: #143039;
+    position: relative;
+    display: flex; 
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+    margin: 0 0 20px 100px;
+    font-weight: 600;
+}
+.calc:hover {
+    background-color: #c36842;
+    color: #1f3941;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-premie{
+    text-decoration: none;
+    color: #143039;
+    transition: color 0.3s ease;
+    font-size: 24px;
+}
+
+
+.icon{
+    font-size: 58px;
+    --ionicon-stroke-width: 36px;
+}
+
+.start p{
+    color: #F5F5F5;
+    font-size: 16px;
+    margin: 0 0 135px 100px;
+}
+
+/* --------------------------------buttons---------------------- */
+
+.buttons{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 64px 70px; 
+    background-color: #CDDFDE; 
+}
+.knop{
+    margin: 0 40px;
+    transition: transform 0.3s ease;
+}
+
+.knop:hover{
+    transform: scale(1.05);
+}
+
+/* --------------------------------inhoud---------------------- */
+
+.inhoud{
+    background-color: white;
+    color: #143039;
+
+}
+
+.inhoud h4{
+    font-size: 36px;
+    margin: 0;
+}
+
+.inhoud p{
+    font-size: 16px;
+    color: #434343;
+}
+
+.inhoud-tekst{
+    padding: 100px;
+    width: 55%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .zorg-image {
+        height: 300px; /* Kleiner maken op kleinere schermen */
+        top: auto;
+        bottom: 0;
+        transform: none;
+    }
+
+    .price {
+        font-size: 100px;
+        width: 80%; /* Flexibeler maken */
+        margin: 20px auto;
+    }
+
+    .head {
+        font-size: 24px;
+        padding: 50px 0 0 20px;
+    }
+
+    .calc {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .start p {
+        font-size: 14px;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
