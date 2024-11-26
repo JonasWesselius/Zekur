@@ -16,7 +16,55 @@
     <link rel="stylesheet" href="buttons.css">
 </head>
 <body>
-    
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Zekur-Logo-Light.svg" alt="Logo">
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" data-section="verzekering" id="verzekering-link">Verzekering</a></li>
+                    <li><a href="#about" data-section="over-zekur">Over Zekur</a></li>
+                    <li><a href="#customer" data-section="klantenservice">Klantenservice</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="font-button">
+                    Aa
+                    <img src="images/arrow.png" alt="Dropdown Icon" class="dropdown-icon">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Klein</a></li>
+                    <li><a href="#">Normaal</a></li>
+                    <li><a href="#">Groot</a></li>
+                </ul>
+            </div>
+            <div class="header-buttons">
+                <a href="#login" class="btn btn-secondary">Inloggen</a>
+                <a href="#language" class="btn btn-primary">EN | NL</a>
+            </div>
+        </div>
+    </header>
+    <header class="secondary-header" id="secondary-header">
+        <div class="container">
+            <div class="home-icon">
+                <a href="#home">
+                    <img src="images/home-icon.svg" alt="Home" class="home-icon">
+                </a>
+            </div>
+            <nav class="secondary-navigation">
+                <ul id="secondary-content">
+                    <!-- Dynamische inhoud -->
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Zoeken..." />
+                <img src="images/search.svg" alt="Zoeken" class="search-icon">
+            </div>
+        </div>
+    </header>
 <!---------------------------------start--------------------------------------->
 <section class="start">
     <div>
@@ -106,6 +154,7 @@
         
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
