@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/Z-logo.png" type="image/png">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gegevens.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Zekur-Logo-Light.svg" alt="Logo">
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" data-section="verzekering" id="verzekering-link">Verzekering</a></li>
+                    <li><a href="#about" data-section="over-zekur">Over Zekur</a></li>
+                    <li><a href="#customer" data-section="klantenservice">Klantenservice</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="font-button">
+                    Aa
+                    <img src="images/arrow.png" alt="Dropdown Icon" class="dropdown-icon">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Klein</a></li>
+                    <li><a href="#">Normaal</a></li>
+                    <li><a href="#">Groot</a></li>
+                </ul>
+            </div>
+            <div class="header-buttons">
+                <a href="#login" class="btn btn-secondary">Inloggen</a>
+                <a href="#language" class="btn btn-primary">EN | NL</a>
+            </div>
+        </div>
+    </header>
+    <header class="secondary-header" id="secondary-header">
+        <div class="container">
+            <div class="home-icon">
+                <a href="#home">
+                    <img src="images/home-icon.svg" alt="Home" class="home-icon">
+                </a>
+            </div>
+            <nav class="secondary-navigation">
+                <ul id="secondary-content">
+                    <!-- Dynamische inhoud -->
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Zoeken..." />
+                <img src="images/search.svg" alt="Zoeken" class="search-icon">
+            </div>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <!-- Eerste dropdown: Jouw Gegevens -->
+        <div class="dropdown-container unlocked" id="jouw-gegevens">
+            <section class="dropdown-title">
+                <h1 class="zekering-title">
+                    <ion-icon name="person-sharp" class="icon"></ion-icon> Jouw Gegevens
+                </h1>
+            </section>
+            <section class="dropdown-content show">
+                <form id="form-1">
+                    <label for="name">Voornaam:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="letters">Voorletters:</label>
+                    <input type="text" id="letters" name="letters" required>
+    
+                    <label for="sur-name">Achternaam:</label>
+                    <input type="text" id="sur-name" name="sur-name" required>
+    
+                    <label for="extra">Tussenvoegsels:</label>
+                    <input type="text" id="extra" name="extra">
+    
+                    <label for="gender">Geslacht:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Selecteer...</option>
+                        <option value="man">Man</option>
+                        <option value="vrouw">Vrouw</option>
+                        <option value="anders">Anders</option>
+                    </select>
+    
+                    <label for="dob">Geboortedatum:</label>
+                    <input type="date" id="dob" name="dob" required>
+    
+                    <label for="bsn">BSN:</label>
+                    <input type="text" id="bsn" name="bsn" required>
+    
+                    <button type="button" class="next-btn" onclick="validateForm(1)">Volgende</button>
+                </form>
+            </section>
+        </div>
+    
+        <!-- Tweede dropdown: Contact Gegevens -->
+        <div class="dropdown-container locked" id="contact-gegevens">
+            <section class="dropdown-title">
+                <h1 class="zekering-title">
+                    <ion-icon name="mail-sharp" class="icon"></ion-icon> Contact Gegevens
+                </h1>
+            </section>
+            <section class="dropdown-content">
+                <form id="form-2">
+                    <label for="email">E-mailadres:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="phone">Telefoonnummer:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="address">Adres:</label>
+                    <input type="text" id="address" name="address" required>
+    
+                    <label for="city">Woonplaats:</label>
+                    <input type="text" id="city" name="city" required>
+    
+                    <label for="postal">Postcode:</label>
+                    <input type="text" id="postal" name="postal" required>
+    
+                    <button type="button" class="next-btn" onclick="validateForm(2)">Volgende</button>
+                </form>
+            </section>
+        </div>
+    
+        <!-- Derde dropdown: Betaal Gegevens -->
+        <div class="dropdown-container locked" id="betaal-gegevens">
+            <section class="dropdown-title">
+                <h1 class="zekering-title">
+                    <ion-icon name="card-sharp" class="icon"></ion-icon> Betaal Gegevens
+                </h1>
+            </section>
+            <section class="dropdown-content">
+                <form id="form-3">
+                    <label for="iban">IBAN:</label>
+                    <input type="text" id="iban" name="iban" required>
+    
+                    <label for="bic">BIC-code (optioneel):</label>
+                    <input type="text" id="bic" name="bic">
+    
+                    <label for="payment-method">Betaalmethode:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="">Selecteer...</option>
+                        <option value="automatisch">Automatische incasso</option>
+                        <option value="overschrijving">Overschrijving</option>
+                    </select>
+    
+                    <label for="confirmation">Akkoord met automatische incasso?</label>
+                    <input type="checkbox" id="confirmation" name="confirmation" required>
+                    <span>Ja, ik geef toestemming</span>
+    
+                    <button type="submit">Verzenden</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-section">
+                <img src="images/zekur_logo_lime_green.svg" alt="greenLogo" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h4>Direct naar</h4>
+                <ul>
+                    <li><a href="#">Contact opnemen</a></li>
+                    <li><a href="#">Schade melden</a></li>
+                    <li><a href="#">Zorgnota declareren</a></li>
+                    <li><a href="#">Inloggen</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Over ons</h4>
+                <ul>
+                    <li><a href="#">Over ZEKUR</a></li>
+                    <li><a href="#">Nieuwsbrief</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Actueel</a></li>
+                    <li><a href="#">Volg ons op Facebook</a></li>
+                    <li><a href="#">Dienstenwijzer</a></li>
+                    <li><a href="#">Fraudebeleid</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Over deze website</h4>
+                <ul>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Kwetsbaarheid melden</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-green">
+            <p>&copy; 2024 ZEKUR - Versie 8.6.1</p>
+        </div>
+        <div class="footer-bottom">
+            <p>ZEKUR onderdeel van Coöperatie Univé U.A. Statutaire vestigingsplaats: Zwolle. Postbus 15, 9400 AA Assen KvK-nr: 05075986, AFM-nr: 12012158, Kifid-nr: 300.008224</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="gegevens.js"></script>
+    <script src="multple choice.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="dropdown.js"></script>
+    
+</body>
+</html>
