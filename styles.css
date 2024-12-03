@@ -225,3 +225,36 @@ body {
 .home-icon{
     width: 2rem;
 }
+
+.thank-you-message {
+    flex: 1; /* Neemt de resterende ruimte tussen header en footer in */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9; /* Optioneel */
+    padding:6rem;
+    box-sizing: border-box;
+}
+
+.thank-you-message h2 {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: var(--main-colour);
+}
+
+.thank-you-message .btn-primary {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--main-colour);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thank-you-message .btn-primary:hover {
+    background-color: var(--call-to-action);
+}

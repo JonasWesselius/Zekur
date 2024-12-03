@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="images/Z-logo.png" type="image/png">
-    <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="gegevens.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -64,102 +62,10 @@
         </div>
     </header>
 
-    <div class="form-container">
-        <div class="dropdown-container unlocked" id="jouw-gegevens">
-            <section class="dropdown-title">
-                <h1 class="zekering-title">
-                    <ion-icon name="person-sharp" class="icon"></ion-icon> Jouw Gegevens
-                </h1>
-            </section>
-            <section class="dropdown-content show">
-                <form id="form-1">
-                    <label for="name">Voornaam:</label>
-                    <input type="text" id="name" name="name" required>
-    
-                    <label for="letters">Voorletters:</label>
-                    <input type="text" id="letters" name="letters" required>
-    
-                    <label for="sur-name">Achternaam:</label>
-                    <input type="text" id="sur-name" name="sur-name" required>
-    
-                    <label for="extra">Tussenvoegsels:</label>
-                    <input type="text" id="extra" name="extra">
-    
-                    <label for="gender">Geslacht:</label>
-                    <select id="gender" name="gender" required>
-                        <option value="">Selecteer...</option>
-                        <option value="man">Man</option>
-                        <option value="vrouw">Vrouw</option>
-                        <option value="anders">Anders</option>
-                    </select>
-    
-                    <label for="dob">Geboortedatum:</label>
-                    <input type="date" id="dob" name="dob" required>
-    
-                    <label for="bsn">BSN:</label>
-                    <input type="text" id="bsn" name="bsn" required>
-    
-                    <button type="button" class="next-btn" onclick="validateForm(1)">Volgende</button>
-                </form>
-            </section>
-        </div>
-        <div class="dropdown-container locked" id="contact-gegevens">
-            <section class="dropdown-title">
-                <h1 class="zekering-title">
-                    <ion-icon name="mail-sharp" class="icon"></ion-icon> Contact Gegevens
-                </h1>
-            </section>
-            <section class="dropdown-content">
-                <form id="form-2">
-                    <label for="email">E-mailadres:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="phone">Telefoonnummer:</label>
-                    <input type="tel" id="phone" name="phone" required>
-    
-                    <label for="address">Adres:</label>
-                    <input type="text" id="address" name="address" required>
-    
-                    <label for="city">Woonplaats:</label>
-                    <input type="text" id="city" name="city" required>
-    
-                    <label for="postal">Postcode:</label>
-                    <input type="text" id="postal" name="postal" required>
-    
-                    <button type="button" class="next-btn" onclick="validateForm(2)">Volgende</button>
-                </form>
-            </section>
-        </div>
-        <div class="dropdown-container locked" id="betaal-gegevens">
-            <section class="dropdown-title">
-                <h1 class="zekering-title">
-                    <ion-icon name="card-sharp" class="icon"></ion-icon> Betaal Gegevens
-                </h1>
-            </section>
-            <section class="dropdown-content">
-                <form id="form-3">
-                    <label for="iban">IBAN:</label>
-                    <input type="text" id="iban" name="iban" required>
-    
-                    <label for="bic">BIC-code (optioneel):</label>
-                    <input type="text" id="bic" name="bic">
-    
-                    <label for="payment-method">Betaalmethode:</label>
-                    <select id="payment-method" name="payment-method" required>
-                        <option value="">Selecteer...</option>
-                        <option value="automatisch">Automatische incasso</option>
-                        <option value="overschrijving">Overschrijving</option>
-                    </select>
-    
-                    <label for="confirmation">Akkoord met automatische incasso?</label>
-                    <input type="checkbox" id="confirmation" name="confirmation" required>
-                    <span>Ja, ik geef toestemming</span>
-    
-                    <button type="submit">Verzenden</button>
-                </form>
-            </section>
-        </div>
-    </div>
+    <div class="thank-you-message">
+        <h2>Bedankt voor het invullen. We houden u op de hoogte!</h2>
+        <a href="index.html" class="btn btn-primary">Terug naar beginscherm</a>
+    </div>    
     
     <footer class="main-footer">
         <div class="container">
