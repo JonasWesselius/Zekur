@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/Z-logo.png" type="image/png">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Zekur-Logo-Light.svg" alt="Logo">
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" data-section="verzekering" id="verzekering-link">Verzekering</a></li>
+                    <li><a href="#about" data-section="over-zekur">Over Zekur</a></li>
+                    <li><a href="#customer" data-section="klantenservice">Klantenservice</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="font-button">
+                    Aa
+                    <img src="images/arrow.png" alt="Dropdown Icon" class="dropdown-icon">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Klein</a></li>
+                    <li><a href="#">Normaal</a></li>
+                    <li><a href="#">Groot</a></li>
+                </ul>
+            </div>
+            <div class="header-buttons">
+                <a href="#login" class="btn btn-secondary">Inloggen</a>
+                <a href="#language" class="btn btn-primary">EN | NL</a>
+            </div>
+        </div>
+    </header>
+    <header class="secondary-header" id="secondary-header">
+        <div class="container">
+            <div class="home-icon">
+                <a href="#home">
+                    <img src="images/home-icon.svg" alt="Home" class="home-icon">
+                </a>
+            </div>
+            <nav class="secondary-navigation">
+                <ul id="secondary-content">
+                    <!-- Dynamische inhoud -->
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Zoeken..." />
+                <img src="images/search.svg" alt="Zoeken" class="search-icon">
+            </div>
+        </div>
+    </header>
+
+    <div class="thank-you-message">
+        <h2>Bedankt voor het invullen. We houden u op de hoogte!</h2>
+        <a href="index.html" class="btn btn-primary">Terug naar beginscherm</a>
+    </div>    
+    
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-section">
+                <img src="images/zekur_logo_lime_green.svg" alt="greenLogo" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h4>Direct naar</h4>
+                <ul>
+                    <li><a href="#">Contact opnemen</a></li>
+                    <li><a href="#">Schade melden</a></li>
+                    <li><a href="#">Zorgnota declareren</a></li>
+                    <li><a href="#">Inloggen</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Over ons</h4>
+                <ul>
+                    <li><a href="#">Over ZEKUR</a></li>
+                    <li><a href="#">Nieuwsbrief</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Actueel</a></li>
+                    <li><a href="#">Volg ons op Facebook</a></li>
+                    <li><a href="#">Dienstenwijzer</a></li>
+                    <li><a href="#">Fraudebeleid</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Over deze website</h4>
+                <ul>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Kwetsbaarheid melden</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-green">
+            <p>&copy; 2024 ZEKUR - Versie 8.6.1</p>
+        </div>
+        <div class="footer-bottom">
+            <p>ZEKUR onderdeel van Coöperatie Univé U.A. Statutaire vestigingsplaats: Zwolle. Postbus 15, 9400 AA Assen KvK-nr: 05075986, AFM-nr: 12012158, Kifid-nr: 300.008224</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="gegevens.js"></script>
+    <script src="multple choice.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="dropdown.js"></script>
+    
+</body>
+</html>
