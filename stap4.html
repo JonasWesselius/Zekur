@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="progress.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -93,15 +94,16 @@
             <li><ion-icon name="checkmark-outline" class="check"></ion-icon> spoedeisende zorg buitenland</li>
 
             </ul>
-            <a href="#">Meer informatie</a>
+            <a href="#">Meer informatie</a> <br>
 
             <div class="prijs">
                 €37.95 <sub>per maand</sub>
             </div>
             <div class="card-options-horizontaal">
-                <button class="option" data-card="income">Kiezen</button>
-                <button class="option" data-card="income">vergelijken</button>
-
+                <div class="step" data-step="1">
+                    <button class="step-option" data-card="39,95">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
             </div>
         </div>
         
@@ -121,13 +123,15 @@
                 €8,95 <sub>per maand</sub>
             </div>
             <div class="card-options-horizontaal">
-                <button class="option" data-card="income">Kiezen</button>
-                <button class="option" data-card="income">Vergelijken</button>
+                <div class="step" data-step="2">
+                    <button class="step-option" data-card="8,95">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
             </div>
         </div>
 
         <div class="card4">
-            <div class="card-header">Voor u geselecteerde pakket <br>
+            <div class="card-header">ZEKUR aanvullend <br>
                 <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
             </div>
             <ul>
@@ -144,13 +148,14 @@
                 €21,95 <sub>per maand</sub>
             </div>
             <div class="card-options-horizontaal">
-                <button class="option" data-card="income">Kiezen</button>
-                <button class="option" data-card="income">Vergelijken</button>
-
+                <div class="step" data-step="3">
+                    <button class="step-option" data-card="21,95">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
             </div>
         </div>
         <div class="card4">
-            <div class="card-header">Voor u geselecteerde pakket <br>
+            <div class="card-header">ZEKUR Aanvullend <br>
                 <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
             </div>
             <ul>
@@ -167,14 +172,15 @@
                 €40,95 <sub>per maand</sub>
             </div>
             <div class="card-options-horizontaal">
-                <button class="option" data-card="income">Kiezen</button>
-                <button class="option" data-card="income">Vergelijken</button>
-
+                <div class="step" data-step="4">
+                    <button class="step-option" data-card="40,95">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
             </div>
         </div>
 
         <div class="card4">
-            <div class="card-header">Voor u geselecteerde pakket <br>
+            <div class="card-header">ZEKUR Aanvullend <br>
                 <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
             </div>
             <ul>
@@ -191,9 +197,10 @@
                 €50,95 <sub>per maand</sub>
             </div>
             <div class="card-options-horizontaal">
-                <button class="option" data-card="income">Kiezen</button>
-                <button class="option" data-card="income">Vergelijken</button>
-
+                <div class="step" data-step="5">
+                    <button class="step-option" data-card="50,95">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
             </div>
         </div>
        
@@ -203,9 +210,12 @@
     
     
     </section>
-    <button class="next-button">Next</button>
 </div>
+    <div class="next-container">
+        <button id="volgende">Next</button>
+    </div>
 <!-- -------------------------------------------------TANDARTS VERZEKERING----------------------------------------------- -->
+<section class="dropdown-section"> 
 <div class="dropdown-container" id="tandarts">
     <section class="dropdown-title">
         <h1 class="zekering-title"> <i class="fa-solid fa-tooth large-icon" ></i> Tandartsverzekering</h1>
@@ -230,7 +240,7 @@
 
 
             </ul>
-            <a href="#">Meer informatie</a>
+            <a href="#">Meer informatie</a> <br>
 
             <div class="prijs">
                 €8.95 <sub>per maand</sub>
@@ -248,7 +258,6 @@
             </div>
             <ul>
             <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Tot € 250 vergoed</li>
-
             </ul>
             <a href="#">Meer informarie</a> <br>
             <div class="prijs">
@@ -284,8 +293,7 @@
             </div>
             <ul>
             <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Tot €1000,00 euro vergoed</li>
-            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Voor deze verzekering geldt
-                een medische acceptatie</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Medische acceptatie</li>
 
             </ul>
             <a href="#">Meer informatie</a> <br>
@@ -305,9 +313,7 @@
             </div>
             <ul>
             <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Tot €1500,00 euro vergoed</li>
-            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Voor deze verzekering geldt
-                een medische acceptatie</li>
-
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Medische acceptatie</li>
             </ul>
             <a href="#">Meer informatie</a> <br>
             <div class="prijs">
@@ -331,7 +337,16 @@
     <button id="next-button"> Next </button>
 
 </div>
+</section>
 
+<div class="progress-container">
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+    <div class="price-display">
+        €<span id="price">0.00</span>
+    </div>
+</div>
 <!-- ------------------------------------------------------------FOOTER--------------------------------------------------------- -->
     <footer class="main-footer">
         <div class="container">
@@ -383,6 +398,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="dropdown.js"></script>
+    <script src="progress.js"></script>
     
 </body>
 </html>

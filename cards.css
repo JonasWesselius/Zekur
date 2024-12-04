@@ -91,6 +91,7 @@ li {
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 .prijs sub{
@@ -130,8 +131,6 @@ li {
     margin: 0;
 }
 
-
-
 .card4 {
     flex: 1 1 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
@@ -141,6 +140,10 @@ li {
     overflow: hidden;
     background-color: white;
     text-align: center;
+}
+
+.card4 ul{
+    padding: 0 40px;
 }
 
 /* -----------------------dropdown---------------------------- */
@@ -166,6 +169,7 @@ li {
     max-width: calc(100% - 300px); /* Volledige breedte min 150px aan beide zijden */
     margin: 10px auto; /* Zentert de container */
     box-sizing: border-box;
+    
 }
 .dropdown-title {
     cursor: pointer;
@@ -225,4 +229,28 @@ li {
 .card-options-horizontaal button.selected {
     background-color: var(--secondary-colour);
     border-color: var(--secondary-colour);
+}
+
+#volgende{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--main-colour);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+
+#volgende:hover{
+    background-color: var(--call-to-action);
+}
+
+#dropdown-section {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack dropdowns and the button vertically */
+    align-items: center; /* Center horizontally */
+    gap: 20px; /* Add space between each dropdown and the button */
+    margin-top: 50px; /* Optional: Space from the top of the page */
 }
