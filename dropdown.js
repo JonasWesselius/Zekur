@@ -1,25 +1,9 @@
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const dropdown1 = document.querySelector("#aanvullend .dropdown-title");
-//     const content1 = document.querySelector("#aanvullend .dropdown-content");
-//     dropdown1.addEventListener("click", () => {
-//         content1.style.display = content1.style.display === "block" ? "none" : "block";
-//     });
-
-//     const dropdown2 = document.querySelector("#tandarts .dropdown-title");
-//     const content2 = document.querySelector("#tandarts .dropdown-content");
-//     dropdown2.addEventListener("click", () => {
-//         content2.style.display = content2.style.display === "block" ? "none" : "block";
-//     });
-// });
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const dropdown1 = document.querySelector("#aanvullend .dropdown-title");
     const content1 = document.querySelector("#aanvullend .dropdown-content");
     const dropdown2 = document.querySelector("#tandarts .dropdown-title");
     const content2 = document.querySelector("#tandarts .dropdown-content");
-    const nextButton = document.querySelector("#volgende"); // Assume there's a button with this ID
+    const nextButton = document.querySelector("#volgende");
 
     // Set initial state: First dropdown open, second closed
     content1.style.display = "block";
