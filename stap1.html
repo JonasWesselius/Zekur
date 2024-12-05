@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="progress.css">
 
 </head>
 <body>
@@ -71,41 +72,38 @@
 <div class="card-container">
     <div class="card">
         <div class="card-header">Wat is uw leeftijd?</div>
-        <div class="card-options">
-<<<<<<< HEAD
-            <button class="option" data-card="age">18 - 24 jaar</button>
-            <button class="option" data-card="age">25 - 39 jaar</button>
-            <button class="option" data-card="age">40 - 65 jaar</button>
-=======
->>>>>>> 5015d225c67b7f8706cbcc0f8160fa7443684910
-            <button class="option" data-card="age">65+</button>
+        <div class="step" data-step="1">
+            <div class="card-options">
+                <button class="option" data-card="age">18 - 24 jaar</button>
+                <button class="option" data-card="age">25 - 39 jaar</button>
+                <button class="option" data-card="age">40 - 65 jaar</button>
+                <button class="option" data-card="age">65+</button>
+            </div>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">Wat is uw inkomen?</div>
-        <div class="card-options">
-<<<<<<< HEAD
-            <button class="option" data-card="income">Minder dan 1.500 p/m</button>
-            <button class="option" data-card="income">1.500 tot 2.500 p/m</button>
-            <button class="option" data-card="income">2.500 tot 4.000 p/m</button>
-            <button class="option" data-card="income">Meer dan 4.000 p/m</button>
+        <div class="step" data-step="2">
+            <div class="card-options">
+                <button class="option" data-card="income">Minder dan 1.500 p/m</button>
+                <button class="option" data-card="income">1.500 tot 2.500 p/m</button>
+                <button class="option" data-card="income">2.500 tot 4.000 p/m</button>
+                <button class="option" data-card="income">Meer dan 4.000 p/m</button>
 
-=======
->>>>>>> 5015d225c67b7f8706cbcc0f8160fa7443684910
+            </div>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">Wat is uw burgelijke staat?</div>
-        <div class="card-options">
-<<<<<<< HEAD
-            <button class="option" data-card="status">Getrouwd</button>
-            <button class="option" data-card="status">Samenwonend</button>
-            <button class="option" data-card="status">Alleenstaand</button>
-            <button class="option" data-card="status">Met kind</button>
-=======
->>>>>>> 5015d225c67b7f8706cbcc0f8160fa7443684910
+        <div class="step" data-step="3">
+            <div class="card-options">
+                <button class="option" data-card="status">Getrouwd</button>
+                <button class="option" data-card="status">Samenwonend</button>
+                <button class="option" data-card="status">Alleenstaand</button>
+                <button class="option" data-card="status">Met kind</button>
+            </div>
         </div>
     </div>
 </div>
@@ -113,7 +111,16 @@
 <div class="next-container">
     <button id="next-button" disabled>Next</button>
 </div>
-
+<!-- -----------------------------------progres--------------------------- -->
+<div class="progress-container">
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+    <div class="price-display">
+        €<span id="price">0.00</span>
+    </div>
+</div>
+<!-- ---------------------------------------footer----------------------------------------- -->
 <footer class="main-footer">
     <div class="container">
         <div class="footer-section">
@@ -122,5 +129,6 @@
 
 <script src="script.js"></script>
 <script src="multple choice.js"></script>
+<script src="progress.js"></script>
 </body>
 </html>
