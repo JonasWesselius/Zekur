@@ -4,8 +4,360 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="images/Z-logo.png" type="image/png">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="progress.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   ppppp 
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Zekur-Logo-Light.svg" alt="Logo">
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" data-section="verzekering" id="verzekering-link">Verzekering</a></li>
+                    <li><a href="#about" data-section="over-zekur">Over Zekur</a></li>
+                    <li><a href="#customer" data-section="klantenservice">Klantenservice</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="font-button">
+                    Aa
+                    <img src="images/arrow.png" alt="Dropdown Icon" class="dropdown-icon">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Klein</a></li>
+                    <li><a href="#">Normaal</a></li>
+                    <li><a href="#">Groot</a></li>
+                </ul>
+            </div>
+            <div class="header-buttons">
+                <a href="#login" class="btn btn-secondary">Inloggen</a>
+                <a href="#language" class="btn btn-primary">EN | NL</a>
+            </div>
+        </div>
+    </header>
+    <header class="secondary-header" id="secondary-header">
+        <div class="container">
+            <div class="home-icon">
+                <a href="#home">
+                    <img src="images/home-icon.svg" alt="Home" class="home-icon">
+                </a>
+            </div>
+            <nav class="secondary-navigation">
+                <ul id="secondary-content">
+                    <!-- Dynamische inhoud -->
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Zoeken..." />
+                <img src="images/search.svg" alt="Zoeken" class="search-icon">
+            </div>
+        </div>
+    </header>
+        <!-- ---------------------------------------------ZEKUR KIESWIJZER------------------------------------------------ -->
+
+    <section class="dropdown-content">
+        <h4>ZEKUR Kieswijzer</h4>
+        <p>Twijfelt u over welk pakket het beste bij u past? We helpen u graag op weg. Hier hebben we onze aanbevolen pakketten <br> 
+           overzichtelijk ingedeeld, afgestemd op verschillende leeftijden en levensstijlen. Zo vindt u gemakkelijk een pakket dat<br>
+           aansluit bij uw huidige situatie en behoeften.
+            <br>
+        </p>
+        <div class="card-container4"> 
+        <div class="card4">
+            <div class="card-header"> 
+                Gewoon ZEKUR Zorg Jong <br>
+                SPECIAL BASISVERZEKERING
+            </div>
+            <ul>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Altijd naar een ziekenhuis bij jou in de buurt</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 100% vergoeding bij gecontracteerde<br>zorgverleners</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 80% vergoeding bij niet-gecontracteerde <br> zorgverleners</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Voor spoedeisende hulp en bevalling kan je <br> sowieso overal terecht</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Altijd naar je eigen huisarts</li>
+            
+            
+
+            <div class="prijs">
+                €118.40 <sub>per maand</sub>
+            </div>
+            <div class="card-options-horizontaal">
+                <div class="step" data-step="2">
+                    <button class="option" data-price="118,40">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
+            </div>
+        </div>
+        
+        <div class="card4">
+            <div class="card-header"> 
+                Gewoon ZEKUR Zorg Volwassen <br>
+                SPECIAL BASISVERZEKERING
+            </div>
+            <ul>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon>Altijd naar een ziekenhuis bij jou in de buurt</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon>100% vergoeding bij gecontracteerde zorgverleners</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 80% vergoeding bij niet-gecontracteerde <br> zorgverleners</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Voor spoedeisende hulp en bevalling kan je <br> sowieso overal terecht</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Altijd naar je eigen huisarts </li>
+            </ul>
+            <div class="prijs">
+                €139,70<sub>per maand</sub>
+            </div>
+            <div class="card-options-horizontaal">
+                <div class="step" data-step="2">
+                    <button class="option" data-price="139,70">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
+            </div>
+        </div>
+
+        <div class="card4">
+                <div class="card-header"> 
+                    Gewoon ZEKUR Zorg Senior <br>
+                    SPECIAL BASISVERZEKERING
+                </div>
+            </div>
+            <ul>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Altijd naar een ziekenhuis bij jou in de buurt</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 100% vergoeding bij gecontracteerde <br> zorgverleners </li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 80% vergoeding bij niet-gecontracteerde <br>zorgverleners</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Voor spoedeisende hulp en bevalling kan je <br> sowieso overal terecht</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Altijd naar je eigen huisarts</li>
+            </ul>
+        
+            <div class="prijs">
+                €124,70 <sub>per maand</sub>
+            </div>
+            <div class="card-options-horizontaal">
+                <div class="step" data-step="2">
+                    <button class="option" data-price="124,70">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
+            </div>
+        </div>
+        
+    
+        <section class="dropdown-section"> 
+            <div class="dropdown-container" id="Collectiviteit" data-section="2">
+                <section class="dropdown-title">
+                    <h1 class="zekering-title"> <i class="fa-solid fa-tooth large-icon" ></i> Collectiviteit</h1>
+                    
+                </section>
+                
+                <section class="dropdown-content">
+                    <h4>Korting via jouw collectiviteit</h4>
+                    <p>2 Via je werkgever, sportbond of ledenorganisatie kun je vaak een collectieve verzekering afsluiten Je krijgt dezelfde <br> verzekering maar met korting en extra vergoedingen op de aanvullende verzekering.
+                        Let op: Alle aanvullende zorgverzekeringen zijn zonder collectiviteitskorting.
+                        <br>
+                        Zoek jouw werkgever, sportbond of ledenorganisatie
+                    </p>
+                    <br>
+                    <br>
+                    </p>
+                    <section class="dropdown-section"> 
+                        <div class="dropdown-container" id="Collectiviteit" data-section="2">
+                            <section class="dropdown-title">
+                                <h1 class="zekering-title"> <i class="fa-solid fa-tooth large-icon" ></i> Basisverzekering</h1>
+                                
+                            </section>
+                            
+                            <section class="dropdown-content">
+                                <h4>Welke basisverzekering wil je?</h4>
+                                <p>2 Via je werkgever, sportbond of ledenorganisatie kun je vaak een collectieve verzekering afsluiten Je krijgt dezelfde <br> verzekering maar met korting en extra vergoedingen op de aanvullende verzekering.
+                                    Let op: Alle aanvullende zorgverzekeringen zijn zonder collectiviteitskorting.
+                                   
+                                </p>
+                                </p>
+                                <br>
+        
+
+        
+        <div class="card4">
+            <div class="card-header">Gewoon ZEKUR Zorg Basis <br>
+                    NATURA BASISVERZEKERING
+            </div>
+            <ul>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Altijd naar een ziekenhuis bij jou in de buurt</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 100% vergoeding bij gecontracteerde <br>zorgverleners</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 80% vergoeding bij niet-gecontracteerde<br>zorgverleners</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Voor spoedeisende hulp en bevalling kan je <br> sowieso overal terecht</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Altijd naar je eigen huisarts</li>
+            
+            </ul>
+            <a href="#">Meer informatie</a> <br>
+            <div class="prijs">
+                €147,30 <sub>per maand</sub>
+            </div>
+            <div class="card-options-horizontaal">
+                <div class="step" data-step="2">
+                    <button class="option" data-price="147.30">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
+            </div>
+        </div>
+
+        <div class="card4">
+            <div class="card-header">Gewoon ZEKUR Zorg Plus <br>
+                COMBINATIE BASISVERZEKERING
+            </div>
+        
+            <ul>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Vrije keuze van je zorgverlener</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 100% vergoeding, ook als je zorgverlener<br> niet is gecontracteerd <br> 90% vergoeding bij niet-gecontracteerde zorgverlener voor GGZ en verpleging en<br>verzorging</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Brillen & contactlenzen</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 36 fysio behandelingen</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> spoedeisende zorg buitenland</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Repatriëring</li>
+            <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Tandartskosten na ongeval</li>
+            </ul>
+            <a href="#">Meer informatie</a> <br>
+            <div class="prijs">
+                €160,15 <sub>per maand</sub>
+            </div>
+            <div class="card-options-horizontaal">
+                <div class="step" data-step="2">
+                    <button class="option" data-price="160.15">Kiezen</button>
+                    <button class="option" data-card="income">vergelijken</button>
+                 </div>
+            </div>
+        </div>
+       
+
+        
+        </div>
+    
+    
+    </section>
+</div>
+    <div class="next-container">
+        <button id="volgende">Next</button>
+    </div>
+<!-- -------------------------------------------------TANDARTS VERZEKERING----------------------------------------------- -->
+    
+    <section class="dropdown-content">
+        <h4>Welke eigen risico wilt u?</h4>
+            <br>
+            Er geldt een wettelijk verplicht eigen risico van € 385,-. Je kan deze verhogen met een vrijwillig extra eigen risico. <br>
+            Je betaalt dan minder premie.
+            <br>
+            <br>
+
+            <div class="prijs">
+                €385,- <sub>per maand</sub>
+        <h4> Geen korting € 0</h4>
+            </div>
+            <div class="card-options-horizontaal">
+                <div class="step" data-step="3">
+                    <button class="option" data-price="income">Kiezen</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="prijs">
+            €485,- <sub>per maand</sub>
+    <h4> U krijgt € 4,- Korting </h4>
+        </div>
+        <div class="card-options-horizontaal">
+            <div class="step" data-step="3">
+                <button class="option" data-price="income">Kiezen</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="prijs">
+        €885,- <sub>per maand</sub>
+<h4> U krijgt € 15,- korting</h4>
+    </div>
+    <div class="card-options-horizontaal">
+        <div class="step" data-step="3">
+            <button class="option" data-price="income">Kiezen</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="next-container"> 
+    <button id="next-button"> Next </button>
+
+</div>
+</section>
+
+<div class="progress-container">
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+    <div class="price-display">
+        €<span id="price">0.00</span>
+    </div>
+</div>
+<!-- ------------------------------------------------------------FOOTER--------------------------------------------------------- -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-section">
+                <img src="images/zekur_logo_lime_green.svg" alt="greenLogo" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h4>Direct naar</h4>
+                <ul>
+                    <li><a href="#">Contact opnemen</a></li>
+                    <li><a href="#">Schade melden</a></li>
+                    <li><a href="#">Zorgnota declareren</a></li>
+                    <li><a href="#">Inloggen</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Over ons</h4>
+                <ul>
+                    <li><a href="#">Over ZEKUR</a></li>
+                    <li><a href="#">Nieuwsbrief</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Actueel</a></li>
+                    <li><a href="#">Volg ons op Facebook</a></li>
+                    <li><a href="#">Dienstenwijzer</a></li>
+                    <li><a href="#">Fraudebeleid</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Over deze website</h4>
+                <ul>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Kwetsbaarheid melden</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-green">
+            <p>&copy; 2024 ZEKUR - Versie 8.6.1</p>
+        </div>
+        <div class="footer-bottom">
+            <p>ZEKUR onderdeel van Coöperatie Univé U.A. Statutaire vestigingsplaats: Zwolle. Postbus 15, 9400 AA Assen KvK-nr: 05075986, AFM-nr: 12012158, Kifid-nr: 300.008224</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="multple choice.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="progress.js"></script>
+    
 </body>
 </html>
