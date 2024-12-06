@@ -35,8 +35,15 @@ options.forEach(option => {
     });
 });
 
-nextButton.addEventListener('click', () => {
-    if (!nextButton.disabled) {
-        window.location.href = 'stap2.html'; 
-    }
-});
+// Get the current page number from the URL (e.g., stap2.html)
+const currentPage = window.location.pathname.match(/stap(\d+)\.html/);
+if (currentPage) {
+    const currentStep = parseInt(currentPage[1], 10); // Extract the step number
+    const nextStep = currentStep + 1; // Calculate the next step
+    const nextPage = `stap${nextStep}.html`;
+
+    nextButton.disabled = false; // Ensure the button is enabled
+    nextButton.addEventListener('click', () => {
+        window.location.href = nextPage; // Navigate to the next page
+    });
+}

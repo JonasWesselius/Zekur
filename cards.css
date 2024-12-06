@@ -254,3 +254,10 @@ li {
     gap: 20px; /* Add space between each dropdown and the button */
     margin-top: 50px; /* Optional: Space from the top of the page */
 }
+
+
+#next-button.enabled {
+    background-color: var(--call-to-action); 
+    cursor: pointer;
+}
+
