@@ -1,0 +1,96 @@
+.form-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.dropdown-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box; 
+    background-color: #f9f9f9; 
+}
+
+.dropdown-title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.zekering-title {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.icon {
+    font-size: 2rem; 
+    color: var(--main-colour);
+    margin-right: 10px; 
+    vertical-align: middle;
+}
+
+.dropdown-content {
+    display: none;
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: var(--main-colour);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    width: auto; 
+    align-self: flex-start; 
+}
+
+button:hover {
+    background-color: var(--call-to-action);
+}
+.locked {
+    opacity: 0.5;
+    pointer-events: none; 
+}
+
+.unlocked {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.dropdown-content {
+    display: none; 
+}
+
+.show {
+    display: block; 
+}
+
+.next-btn {
+    margin-top: 15px;
+}
+
+
+.dropdown-container.unlocked:not(.show):hover {
+    background-color: #e0e0e0; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}

@@ -1,0 +1,28 @@
+.comparison-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    max-width: 100%;
+}
+.comparison-container h2{
+    text-align: center;
+}
+
+.comparison-cards {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.comparison-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.hidden {
+    display: none;
+}

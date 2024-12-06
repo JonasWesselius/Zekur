@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="images/Z-logo.png" type="image/png">
-    <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="buttons.css">
-    <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="progress.css">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -64,67 +61,12 @@
             </div>
         </div>
     </header>
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Pakket op maat</h1>
-        </div>
-    </section>
 
-    <div class="card-container">
-
-        <div class="card">
-            <div class="step" data-step="4">   
-                <div class="card-header">Voor u geselecteerde pakket</div>
-                    <ul>
-                        <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Altijd naar een ziekenhuis bij jou in de buurt.</li>
-                        <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 100% vergoeding bij gecontracteerde zorgverleners.</li>
-                        <li><ion-icon name="checkmark-outline" class="check"></ion-icon> 80% vergoeding bij niet-gecontracteerde zorgverleners.</li>
-                        <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Bij spoedeisende hulp of bevalling kunt u in elk zorginstelling terecht.</li>
-                        <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Altijd naar uw eigen huisarts.</li>
-                    </ul>
-                <div class="prijs">
-                    €188.00 <sub>per maand</sub>
-                </div>
-                <div class="card-options">
-                    <button class="option" data-price="188">Kiezen</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="step" data-step="5">
-                <div class="card-header">Stel zelf een pakket samen</div>
-                    <ul>
-                    <li class="card_bold">Kies uw eigen:</li>
-                        <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Basis verzekering.</li>
-                        <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Aanvullende verzekering.</li>
-                        <li><ion-icon name="checkmark-outline" class="check"></ion-icon> Tandarts verzekering.</li>
-                    </ul>
-                <div class="calc">
-                    <ion-icon name="calculator-outline" class="icon"></ion-icon> <a class="btn-premie">Bereken je premie</a>
-                </div>
-                <div class="card-options">
-                    <button class="option" data-card="kiezen">Kiezen</button>
-                </div>
-            </div>
-        </div>
-    </div>
-        
-    <div class="next-container">
-        <button id="next-button" disabled>Next</button>
-    </div>
-
-    <!-- -----------------------------------progres--------------------------- -->
-    <div class="progress-container">
-        <div class="progress-bar">
-            <div class="progress" id="progress"></div>
-        </div>
-        <div class="price-display">
-            €<span id="price">0.00</span>
-        </div>
-    </div>
-
-    <!-- -----------------------------------------footer------------------------------------------- -->
+    <div class="thank-you-message">
+        <h2>Bedankt voor het invullen. We houden u op de hoogte!</h2>
+        <a href="index.html" class="btn btn-primary">Terug naar beginscherm</a>
+    </div>    
+    
     <footer class="main-footer">
         <div class="container">
             <div class="footer-section">
@@ -171,9 +113,11 @@
     </footer>
     
     <script src="script.js"></script>
-    <script src="package.js"></script>
+    <script src="gegevens.js"></script>
+    <script src="multple choice.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="progress.js"></script>
+    <script src="dropdown.js"></script>
+    
 </body>
 </html>

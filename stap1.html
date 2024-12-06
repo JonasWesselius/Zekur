@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="images/Z-logo.png" type="image/png">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="progress.css">
 
 </head>
 <body>
@@ -70,30 +72,38 @@
 <div class="card-container">
     <div class="card">
         <div class="card-header">Wat is uw leeftijd?</div>
-        <div class="card-options">
-            <button class="option" data-card="age">Onder 18</button>
-            <button class="option" data-card="age">18-35</button>
-            <button class="option" data-card="age">35-65</button>
-            <button class="option" data-card="age">65+</button>
+        <div class="step" data-step="1">
+            <div class="card-options">
+                <button class="option" data-card="age">18 - 24 jaar</button>
+                <button class="option" data-card="age">25 - 39 jaar</button>
+                <button class="option" data-card="age">40 - 65 jaar</button>
+                <button class="option" data-card="age">65+</button>
+            </div>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">Wat is uw inkomen?</div>
-        <div class="card-options">
-            <button class="option" data-card="income">Laag</button>
-            <button class="option" data-card="income">Gemiddeld</button>
-            <button class="option" data-card="income">Hoog</button>
+        <div class="step" data-step="2">
+            <div class="card-options">
+                <button class="option" data-card="income">Minder dan 1.500 p/m</button>
+                <button class="option" data-card="income">1.500 tot 2.500 p/m</button>
+                <button class="option" data-card="income">2.500 tot 4.000 p/m</button>
+                <button class="option" data-card="income">Meer dan 4.000 p/m</button>
+
+            </div>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">Wat is uw burgelijke staat?</div>
-        <div class="card-options">
-            <button class="option" data-card="status">Ongehuwd</button>
-            <button class="option" data-card="status">Gehuwd</button>
-            <button class="option" data-card="status">Gescheiden</button>
-            <button class="option" data-card="status">Weduw(e)</button>
+        <div class="step" data-step="3">
+            <div class="card-options">
+                <button class="option" data-card="status">Getrouwd</button>
+                <button class="option" data-card="status">Samenwonend</button>
+                <button class="option" data-card="status">Alleenstaand</button>
+                <button class="option" data-card="status">Met kind</button>
+            </div>
         </div>
     </div>
 </div>
@@ -101,14 +111,63 @@
 <div class="next-container">
     <button id="next-button" disabled>Next</button>
 </div>
-
+<!-- -----------------------------------progres--------------------------- -->
+<div class="progress-container">
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+    <div class="price-display">
+        €<span id="price">0.00</span>
+    </div>
+</div>
+<!-- ---------------------------------------footer----------------------------------------- -->
 <footer class="main-footer">
     <div class="container">
         <div class="footer-section">
-@@ -104,5 +149,6 @@ <h4>Over deze website</h4>
+            <img src="images/zekur_logo_lime_green.svg" alt="greenLogo" class="footer-logo">
+        </div>
+        <div class="footer-section">
+            <h4>Direct naar</h4>
+            <ul>
+                <li><a href="#">Contact opnemen</a></li>
+                <li><a href="#">Schade melden</a></li>
+                <li><a href="#">Zorgnota declareren</a></li>
+                <li><a href="#">Inloggen</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Over ons</h4>
+            <ul>
+                <li><a href="#">Over ZEKUR</a></li>
+                <li><a href="#">Nieuwsbrief</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Actueel</a></li>
+                <li><a href="#">Volg ons op Facebook</a></li>
+                <li><a href="#">Dienstenwijzer</a></li>
+                <li><a href="#">Fraudebeleid</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Over deze website</h4>
+            <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Kwetsbaarheid melden</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom-green">
+        <p>&copy; 2024 ZEKUR - Versie 8.6.1</p>
+    </div>
+    <div class="footer-bottom">
+        <p>ZEKUR onderdeel van Coöperatie Univé U.A. Statutaire vestigingsplaats: Zwolle. Postbus 15, 9400 AA Assen KvK-nr: 05075986, AFM-nr: 12012158, Kifid-nr: 300.008224</p>
+    </div>
 </footer>
 
 <script src="script.js"></script>
 <script src="multple choice.js"></script>
+<script src="progress.js"></script>
 </body>
 </html>

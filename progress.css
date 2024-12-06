@@ -1,0 +1,38 @@
+/* Progress Bar Container */
+.progress-container {
+    position: fixed;
+    bottom: 0; /* Stick to the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4; /* Light background */
+    padding: 15px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Progress Bar */
+.progress-bar {
+    flex: 1; /* Fill available space */
+    height: 20px;
+    background-color: #ddd; /* Progress bar background */
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    width: 0%; /* Start empty */
+    background-color: var(--call-to-action); /* Dynamic color */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Price Display */
+.price-display {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--dark-main-color);
+    margin: 0 5% 0 5px;
+}
