@@ -19,34 +19,33 @@ document.addEventListener("DOMContentLoaded", () => {
                 cart.classList.add("hidden");
                 toggleCart.textContent = "▼";
             }
-            updateCart();
         });
     }
 
     sections.forEach((section) => {
         const buttons = section.querySelectorAll(".option");
+
         buttons.forEach((button) => {
-            button.addEventListener("click", () => handleButtonClick(button, buttons, section));
+            button.addEventListener("click", () => {
+                if (button.dataset.card === "income") {
+                    console.log("Vergelijk-knop geklikt: Geen impact op voortgangsbalk.");
+                    return;
+                }
+
+                buttons.forEach((btn) => btn.classList.remove("selected"));
+                button.classList.add("selected");
+
+                if (!section.dataset.completed) {
+                    section.dataset.completed = "true";
+                    completedSteps++;
+                }
+
+                updateProgress();
+                updatePrice();
+                updateCart(); // Zorg ervoor dat de winkelmand direct wordt bijgewerkt
+            });
         });
     });
-
-    function handleButtonClick(button, buttons, section) {
-        if (button.dataset.card === "income") {
-            console.log("Vergelijk-knop geklikt: Geen impact op voortgangsbalk.");
-            return;
-        }
-
-        buttons.forEach((btn) => btn.classList.remove("selected"));
-        button.classList.add("selected");
-
-        if (!section.dataset.completed) {
-            section.dataset.completed = "true";
-            completedSteps++;
-        }
-
-        updateProgress();
-        updatePrice();
-    }
 
     function updateProgress() {
         const percentage = (completedSteps / totalSteps) * 100;

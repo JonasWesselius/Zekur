@@ -35,3 +35,27 @@
     cursor: pointer;
     user-select: none;
 }
+
+.cart ul {
+    list-style: none; /* Verwijder standaard opsommingstekens */
+    padding: 0;
+    margin: 0;
+}
+
+.cart li {
+    display: flex; /* Gebruik flexbox */
+    justify-content: space-between; /* Zorg dat naam en prijs aan weerszijden staan */
+    align-items: center; /* Horizontale uitlijning */
+    padding: 5px 0; /* Voeg wat verticale ruimte toe tussen items */
+    border-bottom: 1px solid #ddd; /* Optioneel: lijn onder elk item */
+}
+
+.cart li span:first-child {
+    flex: 1; /* Laat de naam meer ruimte innemen */
+    text-align: left; /* Zorg dat de namen links uitgelijnd zijn */
+}
+
+.cart li span:last-child {
+    text-align: right; /* Zorg dat de prijzen rechts uitgelijnd zijn */
+    min-width: 70px; /* Zorg voor een consistente breedte, zodat prijzen mooi uitlijnen */
+}
