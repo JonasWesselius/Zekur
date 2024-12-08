@@ -33,11 +33,11 @@ const setActiveLink = (links, section) => {
     });
 };
 
-// Function to update secondary header
-const updateSecondaryHeader = (section) => {
+// Function to toggle secondary header visibility
+const toggleSecondaryHeader = (section) => {
     if (secondaryContentMap[section]) {
         secondaryContent.innerHTML = secondaryContentMap[section];
-        secondaryHeader.style.display = "flex";
+        secondaryHeader.classList.add("active");
 
         // Add event listeners to the new secondary links
         const secondaryLinks = secondaryContent.querySelectorAll("a");
@@ -50,15 +50,17 @@ const updateSecondaryHeader = (section) => {
             });
         });
     } else {
-        secondaryHeader.style.display = "none";
+        secondaryHeader.classList.remove("active");
     }
 };
 
 // Initialize active state and content on page load
 document.addEventListener("DOMContentLoaded", () => {
-    const currentSection = window.location.hash.slice(1) || "verzekering"; // Default section
-    setActiveLink(mainNavLinks, currentSection);
-    updateSecondaryHeader(currentSection);
+    const currentSection = window.location.hash.slice(1) || null; // Default: null (no section active)
+    if (currentSection && secondaryContentMap[currentSection]) {
+        setActiveLink(mainNavLinks, currentSection);
+        toggleSecondaryHeader(currentSection);
+    }
 
     // Add click event listeners to main navigation
     mainNavLinks.forEach((link) => {
@@ -66,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             const section = link.dataset.section;
             setActiveLink(mainNavLinks, section);
-            updateSecondaryHeader(section);
+            toggleSecondaryHeader(section);
         });
     });
 });
