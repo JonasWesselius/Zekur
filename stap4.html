@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="progress.css">
     <link rel="stylesheet" href="comparison.css">
+    <link rel="stylesheet" href="cart.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -81,7 +82,7 @@
         </p>
         <div class="card-container4"> 
             <div class="card4" id="card-1">
-                <div class="card-header"> 
+                <div class="card-header pakket-naam"> 
                     Extra ZEKUR <br>
                     Alles voordelig en compleet in één keer verzekerd.
                 </div>
@@ -110,7 +111,7 @@
             </div>
         
             <div class="card4" id="card-2">
-                <div class="card-header">ZEKUR Aanvullend <br>
+                <div class="card-header pakket-naam">ZEKUR Aanvullend <br>
                     <ion-icon name="star-outline"></ion-icon>
                 </div>
                 <ul>
@@ -134,7 +135,7 @@
             </div>
 
             <div class="card4" id="card-3">
-                <div class="card-header">ZEKUR aanvullend <br>
+                <div class="card-header pakket-naam">ZEKUR aanvullend <br>
                     <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
                 </div>
                 <ul>
@@ -159,7 +160,7 @@
                 </div>
             </div>
             <div class="card4" id="card-4">
-                <div class="card-header">ZEKUR Aanvullend <br>
+                <div class="card-header pakket-naam">ZEKUR Aanvullend <br>
                     <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
                 </div>
                 <ul>
@@ -185,7 +186,7 @@
             </div>
 
             <div class="card4" id="card-5">
-                <div class="card-header">ZEKUR Aanvullend <br>
+                <div class="card-header pakket-naam">ZEKUR Aanvullend <br>
                     <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
                 </div>
                 <ul>
@@ -238,7 +239,7 @@
         </p>
         <div class="card-container4"> 
         <div class="card4" id="card-6">
-            <div class="card-header"> 
+            <div class="card-header pakket-naam"> 
                 ZEKUR Tand Basis <br>
                 Alles voordelig en compleet in één keer verzekerd.
             </div>
@@ -263,7 +264,7 @@
         </div>
         
         <div class="card4" id="card-7">
-            <div class="card-header">ZEKUR Tand  <br>
+            <div class="card-header pakket-naam">ZEKUR Tand  <br>
                 <ion-icon name="star-outline"></ion-icon>
             </div>
             <ul>
@@ -283,7 +284,7 @@
         </div>
 
         <div class="card4" id="card-8">
-            <div class="card-header">ZEKUR Tand  <br>
+            <div class="card-header pakket-naam">ZEKUR Tand  <br>
                 <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
             </div>
             <ul>
@@ -303,7 +304,7 @@
             </div>
         </div>
         <div class="card4" id="card-9">
-            <div class="card-header">ZEKUR Tand  <br>
+            <div class="card-header pakket-naam">ZEKUR Tand  <br>
                 <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
             </div>
             <ul>
@@ -325,7 +326,7 @@
         </div>
 
         <div class="card4" id="card-10">
-            <div class="card-header">ZEKUR Tand <br>
+            <div class="card-header pakket-naam">ZEKUR Tand <br>
                 <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
             </div>
             <ul>
@@ -364,8 +365,15 @@
         <div class="progress" id="progress"></div>
     </div>
     <div class="price-display">
-        €<span id="price">0.00</span>
+        <span id="price">0.00</span>
+        <span id="toggle-cart" class="arrow">▼</span>
     </div>
+</div>
+<div id="cart" class="cart hidden">
+    <h3>Winkelmandje</h3>
+    <ul id="cart-items">
+        <!-- Geselecteerde items worden hier toegevoegd -->
+    </ul>
 </div>
 <!-- ------------------------------------------------------------FOOTER--------------------------------------------------------- -->
     <footer class="main-footer">

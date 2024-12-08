@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="gegevens.css">
+    <link rel="stylesheet" href="progress.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -98,8 +99,12 @@
     
                     <label for="bsn">BSN:</label>
                     <input type="text" id="bsn" name="bsn" required>
-    
+                    
+                    
+                    <div class="step" data-step="9">
                     <button type="button" class="next-btn" onclick="validateForm(1)">Volgende</button>
+                    </div>
+
                 </form>
             </section>
         </div>
@@ -126,7 +131,9 @@
                     <label for="postal">Postcode:</label>
                     <input type="text" id="postal" name="postal" required>
     
-                    <button type="button" class="next-btn" onclick="validateForm(2)">Volgende</button>
+                    <div class="step" data-step="10">
+                        <button type="button" class="next-btn" onclick="validateForm(2)">Volgende</button>
+                    </div>
                 </form>
             </section>
         </div>
@@ -155,12 +162,25 @@
                     <input type="checkbox" id="confirmation" name="confirmation" required>
                     <span>Ja, ik geef toestemming</span>
     
-                    <button type="submit">Verzenden</button>
+                    <div class="step" data-step="11">
+                        <button type="submit">Verzenden</button>
+                    </div>
                 </form>
             </section>
         </div>
     </div>
-    
+    <!-- ------------------------------------------------------------progress--------------------------------------------------------- -->
+
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="price-display">
+            €<span id="price">0.00</span>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------footer--------------------------------------------------------- -->
+
     <footer class="main-footer">
         <div class="container">
             <div class="footer-section">

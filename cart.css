@@ -1,0 +1,37 @@
+.cart {
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-bottom: #f4f4f4;
+    background-color: #f4f4f4;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+
+    z-index: 1000;
+    display: none; /* Verberg standaard */
+}
+
+.cart.hidden {
+    display: none; /* Blijft verborgen */
+}
+
+.cart:not(.hidden) {
+    display: block; /* Toon wanneer hidden wordt verwijderd */
+}
+
+.progress-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#toggle-cart {
+    margin-left: 8px;
+    cursor: pointer;
+    user-select: none;
+}
