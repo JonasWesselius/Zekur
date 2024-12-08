@@ -17,11 +17,29 @@ options.forEach(option => {
     });
 });
 
-// Handle Next button navigation
-nextButton.addEventListener('click', () => {
-    const selectedOption = document.querySelector('.card .option.selected');
-    if (selectedOption) {
-        const step = selectedOption.closest('.card').querySelector('.step').dataset.step; // Get the data-step value
-        window.location.href = `stap${step}.html`; // Navigate to the corresponding step
-    }
+document.addEventListener("DOMContentLoaded", () => {
+    const nextButton = document.getElementById("next-button");
+
+    nextButton.addEventListener("click", () => {
+        // Extract the current step number from the URL
+        const currentUrl = window.location.href;
+        const currentStepMatch = currentUrl.match(/stap(\d+)\.html/); // Matches 'stap1.html', 'stap2.html', etc.
+
+        if (currentStepMatch) {
+            const currentStep = parseInt(currentStepMatch[1], 10); // Extract and convert the step number
+            let nextPage = "";
+
+            // Determine the next page based on the current step
+            if (currentStep >= 1 && currentStep <= 3) {
+                nextPage = `stap${currentStep + 1}.html`;
+            } else if (currentStep === 4) {
+                nextPage = "gegevens.html";
+            }
+
+            // Navigate to the next page if it is determined
+            if (nextPage) {
+                window.location.href = nextPage;
+            }
+        }
+    });
 });
