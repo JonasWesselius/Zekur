@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="progress.css">
+    <link rel="stylesheet" href="cart.css">
 
 </head>
 <body>
@@ -115,8 +116,16 @@
             <div class="progress" id="progress"></div>
         </div>
         <div class="price-display">
-            €<span id="price">0.00</span>
+            <span id="price">0.00</span>
+            <span id="toggle-cart" class="arrow">▼</span>
         </div>
+    </div>
+    <div id="cart" class="cart hidden">
+        <h3>Winkelmandje</h3>
+        <ul id="cart-items">
+            <!-- Geselecteerde items worden hier toegevoegd -->
+        </ul>
+        <button id="reset-cart" class="reset-btn">Reset Winkelmand</button>
     </div>
 
     <!-- -----------------------------------------footer------------------------------------------- -->
